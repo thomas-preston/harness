@@ -52,3 +52,26 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+    - stage:
+        name: custom stage
+        identifier: "n"
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: Shell Script
+                  identifier: ShellScript
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo test
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
