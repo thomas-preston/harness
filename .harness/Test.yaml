@@ -1,0 +1,19 @@
+inputSet:
+  name: Test
+  identifier: Test
+  orgIdentifier: Deployment_Services
+  projectIdentifier: Andy_and_Tom_Testing
+  pipeline:
+    identifier: Tom_Testing
+    stages:
+      - stage:
+          identifier: deployk8s
+          type: Deployment
+          spec:
+            service:
+              serviceInputs:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    artifacts:
+                      primary: {}
