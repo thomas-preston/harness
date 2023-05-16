@@ -1,8 +1,8 @@
 pipeline:
-  name: Example
-  identifier: Example
-  projectIdentifier: nexus
-  orgIdentifier: default
+  name: Tom Testing
+  identifier: Tom Testing
+  projectIdentifier: Andy and Tom Testing
+  orgIdentifier: Deployment_Services
   tags: {}
   stages:
     - stage:
